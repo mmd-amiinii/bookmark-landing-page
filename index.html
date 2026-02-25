@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+  
+  <title>Bookmark landing page</title>
+  <style>
+    .blue-600 {
+      background-color: #5368df;
+    }
+    .blue-950 {
+      background-color: #252b46;
+    }
+    .red-400 {
+      background-color: #fa5757;
+    }
+    .gray-50 {
+      background-color: #f7f7f7;
+    }
+  </style>
+</head>
+<body class="min-w-[375px] overflow-x-hidden font-rubic">
+  <header class="relative px-5 pt-6">
+    <div class="mobile-menu flex justify-between items-center lg:hidden relative">
+      <div class="log-container relative z-30">
+        <svg class="" xmlns="http://www.w3.org/2000/svg" width="148" height="25">
+          <g fill="none" fill-rule="evenodd"><path class="bookmark-text" d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#242A45" fill-rule="nonzero"/><g>
+            <circle class="outer-circle" fill="#5267DF" cx="12.5" cy="12.5" r="12.5"/><path class="inner-cricle" d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF"/></g>
+          </g>
+        </svg>
+      </div>
+      <div class="mobile-menu-icon cursor-pointer relative z-30">
+        <img class="open" src="images/icon-hamburger.svg" alt="">
+        <img class="close left-0 top-0 relative z-80" src="images/icon-close.svg" alt="">
+      </div>
+    </div>
+    <div class="mobile-menu-container absolute z-20 w-full h-screen bg-[#252b46] opacity-95 top-0 left-0 pt-[80px] px-5 flex flex-col items-center hidden">
+      <ul class="mobile-menu-items text-xl contents">
+        <li class="w-full text-center border border-transparent border-t-white/40 py-[20px]"><a href="#" class="text-gray-400 hover:text-[#f7f7f7]">FEATURES</a></li>
+        <li class="w-full text-center border border-transparent border-t-white/40 py-[20px]"><a href="#" class="text-gray-400 hover:text-[#f7f7f7]">PRICING</a></li>
+        <li class="w-full text-center border border-transparent border-t-white/40 border-b-white/40 py-[20px]"><a href="#" class="text-gray-400 hover:text-[#f7f7f7]">CONTACT</a></li>
+      </ul>
+      <div class="login-container w-full mt-[50px] text-xl font-medium text-[#f7f7f7] hover:bg-[#f7f7f7] hover:text-[#252b46] border-2 rounded-md py-[10px] text-center cursor-pointer">
+        <span class="tracking-[2.5px]">LOGIN</span>
+      </div>
+      <div class="icons absolute flex justify-center items-center gap-[50px] bottom-[100px]">
+        <img class="cursor-pointer" src="images/icon-facebook.svg" alt="">
+        <img class="cursor-pointer" src="images/icon-twitter.svg" alt="">
+      </div>
+    </div>
+    <div class="desktop-menu h-[50px] hidden lg:flex justify-between items-center px-[50px] xl:px-[100px]">
+      <div class="logo-container">
+        <img src="images/logo-bookmark.svg" alt="">
+      </div>
+      <div class="desktop-menu-items flex items-center gap-[50px]">
+        <ul class="desktop-items flex gap-[50px] text-sm text-gray-400">
+          <li><a href="#" class="hover:text-black">FEATURES</a></li>
+          <li><a href="#" class="hover:text-black">PRICING</a></li>
+          <li><a href="#" class="hover:text-black">CONTACT</a></li>
+        </ul>
+        <div class="login-container text-white bg-[#fa5757] px-6 py-[7px] rounded-md text-sm cursor-pointer">
+          <span class="tracking-[1px] font-medium">LOGIN</span>
+        </div>
+      </div>
+      
+    </div>
+    <div class="header-content mt-[80px] lg:grid lg:grid-cols-2">
+      <div class="header-img-contianer relative lg:col-start-2 flex justify-center items-center lg:justify-normal">
+        <img class="relative z-10" src="images/illustration-hero.svg" alt="">
+        <div class="background absolute w-[900px] h-[75%] bg-[#5368df] rounded-bl-[100px] top-[20%] left-[30%] z-0"></div>
+      </div>
+      <div class="header-text-contianer flex flex-col items-center text-center lg:text-left mt-[40px] lg:-mt-[50px] gap-4 lg:col-start-1 lg:justify-center lg:row-start-1">
+        <h1 class="text-[28px] lg:text-[32px] xl:text-[36px] font-medium leading-snug w-[375px] lg:w-full lg:px-[50px] xl:pl-[100px] xl:pr-[200px] [word-spacing:2px]">A Simple Bookmark Manager</h1>
+        <p class="text-sm lg:text-[15px] text-gray-400 px-[30px] lg:px-[50px] xl:pl-[100px] lg:pr-[150px] xl:pr-[200px] w-[335px] lg:w-full ">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instanly. Try if for free.</p>
+        <div class="action-btns flex gap-[30px] w-[350px] lg:w-full mt-[10px] lg:pl-[50px] xl:pl-[100px]">
+          <div class="chrom-btn w-1/2 lg:w-[150px] text-sm font-medium bg-[#5368df] rounded-md py-[10px] px-[10px] text-[#f7f7f7] flex justify-center items-center drop-shadow-md cursor-pointer border hover:border-[#5368df] hover:border hover:bg-transparent hover:text-[#5368df]">
+            <span>Get it on Chrome</span>
+          </div>
+          <div class="firefox-btn w-1/2 lg:w-[150px] text-sm font-medium bg-gray-100 text-gray-800 rounded-md py-[10px] px-[10px] flex justify-center items-center drop-shadow-md cursor-pointer border hover:border-[#252b46] hover:border hover:bg-transparent hover:text-[#252b46]">
+            <span>Get it on Firefox</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main-content flex flex-col gap-[150px] w-full mt-[150px] px-5">
+    <div class="features-container flex flex-col gap-[50px] items-center">
+      <div class="flex flex-col items-center gap-4">
+        <span class="text-[22px] lg:text-[28px] font-medium">Features</span>
+        <p class="text-sm lg:text-base text-gray-400 text-center px-5 max-w-[500px]">Our aim is to make it quick and easy for you to access your favourite website. Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+      <div class="features-modes-container flex flex-col gap-[50px]">
+        <div class="modes-text flex flex-col items-center px-3 text-sm min-w-[375px] max-w-[650px] mx-auto lg:flex-row lg:gap-[100px] lg:border lg:border-transparent lg:border-b-gray-300 lg:px-[30px] lg:pb-2 relative">
+          <span class="feature-mode simple w-full font-medium relative text-center lg:text-nowrap border border-transparent lg:border-none border-t-gray-300 py-[14px] cursor-pointer after:content-[''] after:absolute after:w-[100px] lg:after:w-full after:h-[4px] after:bg-[#fa5757] after:bottom-[-1px] after:left-[50%] after:translate-x-[-50%] after:opacity-100 transition-[left] after:duration-300 after:ease-in lg:after:bottom-[-8px]">Simple Bookmarking</span>
+          <span class="feature-mode speedy w-full text-black/50 font-medium hover:text-black relative text-center lg:text-nowrap border border-transparent border-t-gray-300 lg:border-none py-[14px] cursor-pointer after:content-[''] after:absolute after:w-[100px] lg:after:w-full after:h-[4px] after:bg-[#fa5757] after:bottom-[-1px] after:left-[50%] after:translate-x-[-50%] after:opacity-0 transition-[left] after:duration-300 after:ease-in lg:after:bottom-[-8px]">Speedy Searching</span>
+          <span class="feature-mode easy w-full text-black/50 font-medium hover:text-black relative text-center lg:text-nowrap border border-gray-300 border-x-transparent lg:border-none py-[14px] cursor-pointer after:content-[''] after:absolute after:w-[100px] lg:after:w-full after:h-[4px] after:bg-[#fa5757] after:bottom-[-1px] after:left-[50%] after:translate-x-[-50%] after:opacity-0 transition-[left] after:duration-300 after:ease-in lg:after:bottom-[-8px]">Easy Sharing</span>
+        </div>
+        <div class="images-&-description mt-[10px] lg:grid lg:grid-cols-2 lg:gap-[50px] xl:gap-[100px] lg:items-center">
+          <div class="modes-img relative flex justify-center items-center lg:justify-start lg:pl-[50px] xl:pl-[100px]">
+            <img class="feature-modes-img relative z-10" src="images/illustration-features-tab-1.svg" alt="">
+            <img class="feature-modes-img hidden relative z-10" src="images/illustration-features-tab-2.svg" alt="">
+            <img class="feature-modes-img hidden relative z-10" src="images/illustration-features-tab-3.svg" alt="">
+            <div class="background absolute w-[800px] h-[90%] bg-[#5368df] rounded-br-[100px] top-[20%] right-[30%] lg:right-[260px] z-0"></div>
+          </div>
+          <div class="description flex flex-col items-center text-center lg:text-left mt-[80px] lg:mt-0 gap-4 lg:pl-[50px] xl:pl-0">
+            <p class="text-[22px] lg:text-[28px] font-medium leading-snug lg:w-full">Bookmark in one click</p>
+            <p class="text-sm lg:text-lg text-gray-400 text-center lg:text-left px-5 lg:pl-0 max-w-[380px] lg:pr-[50px] xl:pr-[200px] lg:max-w-full">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="download-container flex flex-col items-center gap-[50px]">
+        <div class="flex flex-col gap-4">
+          <p class="text-[22px] lg:text-[28px] font-medium text-center">Download the extension</p>
+          <p class="text-sm lg:text-base text-gray-400 text-center px-5 max-w-[380px] lg:max-w-[550px]">WE've got more browsers in the pipeline. Please do let us known if you've got a favourite you'd like us to prioritize.</p>
+        </div>
+        <div class="cards-container flex flex-col lg:flex-row items-center gap-[60px]">
+          <div class="chrome-card w-[300px] shadow-[0px_10px_15px_0px_rgba(0,0,0,0.1)] rounded-lg flex flex-col items-center gap-6 p-6 pt-[40px]">
+            <img src="images/logo-chrome.svg" alt="">
+            <div class="flex flex-col items-center">
+              <span class="text-lg font-semibold"> Add to Chrome</span>
+              <span class="text-sm text-gray-400 mt-[5px]">Minimum version 62</span>
+            </div>
+            <img class="mt-5" src="images/bg-dots.svg" alt="">
+            <button class="w-full py-[10px] bg-[#5368df] drop-shadow-md shadow-[#5368df] rounded-md text-white text-sm">Add & Install Extension </button>
+          </div>
+          <div class="firefox-card w-[300px] shadow-[0px_10px_15px_0px_rgba(0,0,0,0.1)] rounded-lg flex flex-col items-center gap-6 p-6 pt-[40px] lg:translate-y-[50px]">
+            <img src="images/logo-firefox.svg" alt="">
+            <div class="flex flex-col items-center">
+              <span class="text-lg font-semibold"> Add to Firefox</span>
+              <span class="text-sm text-gray-400 translate-x-[5px]">Minimum version 62</span>
+            </div>
+            <img class="mt-5" src="images/bg-dots.svg" alt="">
+            <button class="w-full py-[10px] bg-[#5368df] drop-shadow-md shadow-[#5368df] rounded-md text-white text-sm">Add & Install Extension </button>
+          </div>
+          <div class="opera-card w-[300px] shadow-[0px_10px_15px_0px_rgba(0,0,0,0.1)] rounded-lg flex flex-col items-center gap-6 p-6 pt-[40px] lg:translate-y-[100px]">
+            <img src="images/logo-opera.svg" alt="">
+            <div class="flex flex-col items-center">
+              <span class="text-lg font-semibold"> Add to Opera</span>
+              <span class="text-sm text-gray-400 mt-[5px]">Minimum version 62</span>
+            </div>
+            <img class="mt-5" src="images/bg-dots.svg" alt="">
+            <button class="w-full py-[10px] bg-[#5368df] drop-shadow-md shadow-[#5368df] rounded-md text-white text-sm">Add & Install Extension </button>
+          </div>
+        </div>
+    </div>
+    <div class="questions flex flex-col items-center max-w-[550px] mx-auto lg:mt-[100px]">
+      <div class="flex flex-col items-center gap-[10px] text-center">
+        <p class="text-[22px] lg:text-[28px] font-semibold px-8">Frequently Asked Questions</p>
+        <p class="text-sm lg:text-base text-gray-400 px-5 max-w-[450px] lg:max-w-[500px]">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+      </div>
+      <div class="questions-container w-full flex flex-col items-center mt-[50px] text-[15px] lg:text-lg divide-y-2">
+        <div></div>
+        <div class="first-question question w-full py-4 lg:py-5">
+          <div class="flex justify-between items-center">
+            <span class="font-medium text-black/70">What is Bookmark?</span>
+            <img class="cursor-pointer question-down-arrow transition-[transition:rotate] duration-500" src="images/icon-arrow.svg" alt="">
+          </div>
+          <div class="first-answer overflow-hidden max-h-0  transition-[max-height_7000ms_ease,margin_600ms_ease] text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quos quia quam ex quasi cum eaque recusandae quo aperiam fugit sapiente beatae impedit ab id voluptate, a, suscipit amet alias.
+          </div>
+        </div>
+        <div class="second-question w-full py-4 lg:py-5">
+          <div class="flex justify-between items-center">
+            <span class="font-medium text-black/70">How can I request a new browser?</span>
+            <img class="cursor-pointer question-down-arrow transition-[transition:rotate] duration-500" src="images/icon-arrow.svg" alt="">
+          </div>
+          <div class="second-answer overflow-hidden max-h-0  transition-[max-height_7000ms_ease,margin_600ms_ease] text-gray-500">
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non liaula. Suspendisse imperdiet. Vivamus luctus eros aliauet
+            convallis ultricies. Mauris augue massa, ultricies non ligula.
+            Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+          </div>
+        </div>
+        <div class="third-question w-full py-4 lg:py-5">
+          <div class="flex justify-between items-center">
+            <span class="font-medium text-black/70">Is there a mobile app?</span>
+            <img class="cursor-pointer question-down-arrow transition-[transition:rotate] duration-500" src="images/icon-arrow.svg" alt="">
+          </div>
+          <div class="third-answer overflow-hidden max-h-0  transition-[max-height_7000ms_ease,margin_600ms_ease] text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quos quia quam ex quasi cum eaque recusandae quo aperiam fugit sapiente beatae impedit ab id voluptate, a, suscipit amet alias.
+          </div>
+        </div>
+        <div class="fourth-question w-full py-4 lg:py-5">
+          <div class="flex justify-between items-center">
+            <span class="font-medium text-black/70">What about other Chromium broswers?</span>
+            <img class="cursor-pointer question-down-arrow transition-[transition:rotate] duration-500" src="images/icon-arrow.svg" alt="">
+          </div>
+          <div class="foruth-answer overflow-hidden max-h-0  transition-[max-height_7000ms_ease,margin_600ms_ease] text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quos quia quam ex quasi cum eaque recusandae quo aperiam fugit sapiente beatae impedit ab id voluptate, a, suscipit amet alias.
+          </div>
+        </div>
+        <div class="w-full text-center">
+          <button class="bg-[#5368df] text-sm lg:text-base lg:font-medium text-[#f7f7f7] px-5 lg:px-7 py-[10px] lg:py-[15px] rounded-md mt-[40px] drop-shadow-md">More Info</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-[150px]">
+    <div class="contact-container bg-[#5368df] py-[60px] lg:py-[80px] px-8 flex flex-col items-center gap-6 lg:gap-10">
+      <div class="flex flex-col items-center text-[#f7f7f7] font-medium text-center space-y-3">
+        <span class="text-xs tracking-[4px] ">35.000+ ALREADY JOINED</span>
+        <span class="text-[22px] lg:text-[32px] lg:w-[400px] mt-[5px]">Stay up-to-date with what we're doing</span>
+      </div>
+      <div class="flex flex-col md:flex-row w-full md:w-[450px] gap-4">
+        <div class="email-container text-[13px] lg:text-[15px] md:w-8/12 font-medium p-[1px] rounded-md relative">
+          <input class="email-input text-center md:text-left w-full h-[45px] md:h-[50px] rounded-md pl-5 border-none outline-none" type="email" placeholder="Enter your email address">
+          <div class="email-error-container hidden">
+            <p class="text-[#f7f7f7] text-xs lg:text-[13px] italic pl-5 my-[5px] lg:my-[10px]">Whoops, make sure it's an email</p>
+            <img class="absolute top-[10px] lg:top-[15px] right-3" src="images/icon-error.svg" alt="">
+          </div>
+        </div>
+        <button class="contact-btn w-full md:w-4/12 h-[45px] md:h-[50px] bg-[#fa5757] text-[#f7f7f7] rounded-md text-[13px] lg:text-[15px] font-medium">Contact Us</button>
+      </div>
+    </div>
+    <div class="footer-links bg-[#252b46] flex flex-col lg:flex-row items-center gap-[40px] lg:gap-[100px] py-8 lg:px-[50px] xl:px-[100px]">
+      <svg xmlns="http://www.w3.org/2000/svg" width="148" height="25">
+        <g fill="none" fill-rule="evenodd"><path class="bookmark-text" d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#f7f7f7" fill-rule="nonzero"/><g>
+          <circle class="outer-circle" fill="#5267DF" cx="12.5" cy="12.5" r="12.5"/><path class="inner-cricle" d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF"/></g>
+        </g>
+      </svg>
+      <div class="links flex flex-col lg:flex-row items-center gap-4 lg:gap-[30px] text-sm tracking-[2px] w-full lg:w-auto">
+        <a class="text-white/70 hover:text-[#f7f7f7]" href="#">FEATURES</a>
+        <a class="text-white/70 hover:text-[#f7f7f7]" href="#">PRIXING</a>
+        <a class="text-white/70 hover:text-[#f7f7f7]" href="#">CONTACT</a>
+      </div>
+      <div class="social-media flex items-center gap-[50px] lg:ml-auto">
+        <div class="facebook-icon cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="hover:fill-[#fa5757]" fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+        </div>
+        <div class="twiter-icon cursor-pointer] cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path class="hover:fill-[#fa5757]" fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
