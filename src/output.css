@@ -976,8 +976,40 @@ video {
   width: 100%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[\6F1\6F5\6F0\] {
+  width: ۱۵۰;
+}
+
+.w-\[\6F1\6F5\6F0\66A\] {
+  width: ۱۵۰٪;
+}
+
+.w-\[15\] {
+  width: 15;
+}
+
+.w-\[150\] {
+  width: 150;
+}
+
+.w-\[150\%\] {
+  width: 150%;
+}
+
+.w-\[1\] {
+  width: 1;
+}
+
 .min-w-\[375px\] {
   min-width: 375px;
+}
+
+.min-w-\[365px\] {
+  min-width: 365px;
 }
 
 .max-w-\[380px\] {
@@ -998,6 +1030,10 @@ video {
 
 .max-w-\[650px\] {
   max-width: 650px;
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
 }
 
 .flex-shrink {
